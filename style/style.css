@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7f6;
+    font-family: Arial, sans-serif;
+}
+
+#todolist {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+
+#add-to-do {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#add-to-do input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+#add-to-do input:focus {
+    border: 2px solid #8bc34a;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #8bc34a;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #7aa92a;
+}
+
+.del-button {
+    background-color: #e91e63;
+    color: white;
+}
+
+.done-button {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.done-button:hover {
+    background-color: #0097a7;
+}
+
+.item {
+    background: #ffffff;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.item:hover {
+    background: #f1f1f1;
+}
+
+.tools {
+    display: flex;
+    gap: 5px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #999;
+    opacity: 0.6;
+}
+
+#filter-to-do {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+#filter-to-do input[type="radio"] {
+    margin-right: 5px;
+}
+
+#filter-to-do label {
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+}
